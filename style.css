@@ -1,0 +1,302 @@
+/*ESTILO GERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: black;
+    height:100vh ;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+   display: flex;
+}
+
+.rm-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: aqua;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+h2.titulo{
+    color: #fff;
+    font-size: 38px;
+   text-align: center;
+
+}
+
+h2.titulo span{
+    color: aqua;
+}
+
+button:hover, form .rm-enviar input:hover{
+    box-shadow: 0px 0px 8px #787a7e;
+    transform: scale(1.05);
+}
+
+
+
+*/Estilo do cabecalho*/
+header{
+    padding: 40px 4%;  
+}
+
+header .logo img {
+    width: 80px; /* Define a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+
+header > .interface{
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+}
+
+header a{
+    color: #7e7878;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.05); 
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+*/ESTILO TOPO DO SITE*/
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo h1 span{
+    color: aqua;
+}
+
+.topo-do-site .txt-topo p{
+    color: #fff;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo img{
+    position:relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top:0
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/*ESTILO DAS ESPECIALIDADES*/
+section.especialidades{
+    padding: 40px 4%;
+}
+
+section.especialidades .flex{
+    gap: 60px;
+}
+
+.especialidades .especi-box{
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px ;
+    transition: .2s;
+}
+
+.especialidades .especi-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #ffffff50 ;
+
+}
+
+.especialidades .especi-box i{
+    font-size: 70px;
+    color: aqua;
+}
+
+especialidades .especi-box h3{
+    font-size: 28px;
+    margin: 15px 0 ;
+}
+
+/*estilo do sobre*/
+section.sobre{
+    padding: 80px 4%;
+}
+
+.sobre .img-sebre img {
+    margin-right: 20px; /* Espaço à direita da imagem */
+    /* Ou você pode usar margin-left, dependendo da posição da imagem */
+}
+
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60xp
+}
+
+.sobre .txt-sobre{
+    color: #fff;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: aqua;
+    display: block;
+}
+
+.sobre .txt-sobre p{
+    margin: 20 0;
+    text-align: justify;
+
+}
+
+.sobre .txt-sobre .rm-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: aqua;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+/*ESTILO FORMULARIO*/
+section.formulario{
+    padding: 80px 4%;
+}
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px
+    
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: rgb(44, 44, 44);
+    border:0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+form textarea{
+    resize: none;
+    width: 100%;
+    height: 200px; 
+    max-height: 600px;
+}
+
+form .rm-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .rm-enviar input{
+    width: 120px;
+    background-color: #00ffff;
+    color: black;
+    font-weight: 700;
+    transition: .2s;
+}
+
+/*ESTILO DO RODAPE*/
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+.borda{
+    border-top: 2px solid #00ffff;
+
+}
+
+footer .line-footer p i{
+    color:#00ffff;
+    font-size: 22px;
+}
+
+footer .line-footer p a{
+    color: #ffff;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
